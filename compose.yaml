@@ -9,4 +9,3 @@ services:
     volumes:
       - ./input_events:/workspace/input_events:ro
       - ./output_events:/workspace/output_events
-      - ./output_logs:/workspace/output_logs
