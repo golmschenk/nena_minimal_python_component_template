@@ -1,0 +1,13 @@
+services:
+  component:
+    build:
+      context: ..
+      dockerfile: nena_python_container_template/Containerfile
+    container_name: nena-component
+    working_dir: /workspace
+    environment:
+      NENA_IN_EVENT_PIPELINE: "false"
+    volumes:
+      - ./input_events:/workspace/input_events:ro
+      - ./output_events:/workspace/output_events
+      - ./output_logs:/workspace/output_logs
