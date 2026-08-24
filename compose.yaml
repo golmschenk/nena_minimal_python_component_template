@@ -1,9 +1,8 @@
 services:
-  component:
+  component_pipeline:
     build:
-      context: ..
-      dockerfile: nena_python_container_template/Containerfile
-    container_name: nena-component
+      context: .
+      dockerfile: Containerfile
     working_dir: /workspace
     environment:
       NENA_IN_EVENT_PIPELINE: "false"

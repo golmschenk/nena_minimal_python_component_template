@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nena_python_component_template"
+version = "0.1.0"
+dependencies = [
+    "nena_component_tools"
+]
+
+[tool.hatch.build]
+include = [
+    "*.py"
+]
