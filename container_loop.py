@@ -7,7 +7,7 @@ def main():
     task_iterator = create_task_iterator()
     for task in task_iterator:
         output_dictionary = pipeline_function(task.input_dictionary)
-        task.emit_event(event_source='minimal_python_component_pipeline', output_dictionary=output_dictionary)
+        task.emit_event(output_dictionary=output_dictionary)
 
 
 if __name__ == '__main__':
