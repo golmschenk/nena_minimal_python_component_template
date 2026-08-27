@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "nena_minimal_python_component_template"
 version = "0.1.0"
 dependencies = [
-    "nena_component_tools>=0.1.0"
+    "nena_component_tools>=0.2.0"
 ]
 
 [tool.hatch.build]
